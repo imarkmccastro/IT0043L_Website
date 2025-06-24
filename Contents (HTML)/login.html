@@ -12,6 +12,7 @@
     
     <div class="container login-container"> 
         <div class="row w-100 mx-auto align-items-center">
+            <!-- Left Side - Information Panel -->
             <div class="col-md-7 login-info-panel d-none d-md-block">
                 <h1>Welcome Back!</h1>
                 <p class="text-muted"> Let's continue working together for a safer digital campus.</p>
@@ -23,9 +24,44 @@
                 <img src="https://images.unsplash.com/photo-1562774053-68a8659b4a3c?q=80&w=1470&auto=format&fit=crop" 
                      alt="A bright photo of a group of Filipino university friends enjoying their time on campus"
                      class="img-fluid mt-4 rounded"
-                     onerror="this.onerror=null; this.src='https://placehold.co/500x300/EAEAFE/4a4de6?text=Welcome+Back!'";
-                >
+                     onerror="this.onerror=null; this.src='https://placehold.co/500x300/EAEAFE/4a4de6?text=Welcome+Back!'";>
             </div>
+        
+            <!-- Right Side - Login Form -->
+            <div class="cold-md-5">
+                <div class="login-form-container">
+                    <h3 class="text-center mb-1">Sign in to your account.</h3>
+                    <p class="text-center text-muted mb-4">Welcome back to CampusSecure</p>
+
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="John@gmail.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="********" required>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="" id="rememberMe">
+                                <label for="rememberMe" class="form-check-label">Remember me</label>
+                            </div>
+                            <a href="#" class="text-decoration-none">Forgot password?</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Sign in</button>
+                        <div class="divider">or</div>
+                        <button type="button" class="btn btn-google w-100 mb-3"><i class="fab fa-google me-2"></i>Sign in with Google</button>
+                        <p class="text-center mt-3">Don't have an account? <a href="#" class="text-decoration-none">Sign up</a></p>
+                    </form>
+                </div>
+            </div>
+        
+        
+        
+        
+        
+        
         </div>
     </div>
 
