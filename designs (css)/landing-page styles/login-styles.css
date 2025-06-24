@@ -1,18 +1,15 @@
-body
-{
+body {
     font-family: 'Inter', sans-serif;
     background-color: #f4f7f6;
 }
 
-.login-container
-{
+.login-container {
     min-height: 100vh;
     display: flex;
     align-items: center;
 }
 
-.login-form-container
-{
+.login-form-container {
     background-color: white;
     padding: 40px;
     border-radius: 15px;
@@ -21,33 +18,28 @@ body
     width: 100%;
 }
 
-.login-info-panel
-{
+.login-info-panel {
     padding: 40px;
     color: #333;
 }
 
-.login-info-panel h1
-{
-    font-weight: 700px;
+.login-info-panel h1 {
+    font-weight: 700;
     margin-bottom: 15px;
 }
 
-.login-info-panel .img-fluid
-{
+.login-info-panel .img-fluid {
     object-fit: cover;
     height: 300px;
     width: 100%;
 }
 
-.form-control
-{
+.form-control {
     border-radius: 8px;
     padding: 12px 15px;
 }
 
-.btn-primary
-{
+.btn-primary {
     background-color: #6f42c1;
     border-color: #6f42c1;
     padding: 12px;
@@ -55,26 +47,23 @@ body
     border-radius: 8px;
 }
 
-.btn-primary:hover
-{
+.btn-primary:hover {
     background-color: #5a34a0;
     border-color: #5a34a0;
 }
 
-.divider
-{
+.divider {
     text-align: center;
     margin: 20px 0;
     color: #aaa;
 }
 
-.btn-google
-{
+.btn-google {
     background-color: #fff;
     color: #444;
+    border: 1px solid #ddd;
 }
 
-.btn-google:hover
-{
+.btn-google:hover {
     background-color: #f8f8f8;
 }
