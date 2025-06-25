@@ -107,10 +107,46 @@
             color: white;
             padding: 40px 0;
         }
-    </style>
 
+        .btn-primary {
+            background-color: #4a4de6;
+            border-color: #4a4de6;
+        }
+
+        .btn-primary:hover {
+             background-color: #3b3dbd;
+             border-color: #3b3dbd;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- Navigation Bar -->
+    <nav class = "navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class = "container">
+            <a class = "navbar-brand" href = "#">CampusSecure</a>
+            <button class = "navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navbarNav" aria-controls = "navbarNav" aria-expanded = "false" aria-label = "Toggle navigation">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+            <div class = "collapse navbar-collapse" id="navbarNav">
+                <ul class = "navbar-nav ms-auto">
+                    <li class = "nav-item">
+                        <a class = "nav-link active" href = "Landing_Page.html">Home</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "About.html">About</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "Features.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class = "nav-link" href = "Login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class = "btn btn-primary ms-lg-2" href = "Sign-up.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </body>
 </html>
