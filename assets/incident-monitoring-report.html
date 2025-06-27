@@ -152,66 +152,106 @@
 </head>
 <body>
 
-    <div class="wrapper">
-        <div class="left-sidebar">
-            <h3 class="sidebar-header">CampusSecure</h3>
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link" href="admin.html">
-                        <i class="fas fa-tachometer-alt fa-fw"></i> Dashboard
+    <div class = "wrapper">
+        <div class = "left-sidebar">
+            <h3 class = "sidebar-header">CampusSecure</h3>
+            <ul class = "nav flex-column">
+                <li class = "nav-item">
+                    <a class = "nav-link" href="admin.html">
+                        <i class = "fas fa-tachometer-alt fa-fw"></i> Dashboard
+                    </a>
+                </li>
+                <li class = "nav-item">
+                    <a class = "nav-link active" href="#">
+                        <i class = "fas fa-exclamation-circle fa-fw"></i> Incidents
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">
-                        <i class="fas fa-exclamation-circle fa-fw"></i> Incidents
+                    <a class = "nav-link" href="#">
+                        <i class = "fas fa-clipboard-list fa-fw"></i> System Log
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="fas fa-clipboard-list fa-fw"></i> System Log
+                <li class = "nav-item">
+                    <a class = "nav-link" href="#">
+                        <i class = "fas fa-network-wired fa-fw"></i> Devices
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="fas fa-network-wired fa-fw"></i> Devices
+                <li class = "nav-item">
+                    <a class = "nav-link" href="#">
+                        <i class = "fas fa-cog fa-fw"></i> Settings
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="fas fa-cog fa-fw"></i> Settings
-                    </a>
-                </li>
-                 <li class="nav-item" style="position: absolute; bottom: 20px; width: calc(100% - 30px);">
-                    <a class="nav-link" href="login.html">
-                        <i class="fas fa-sign-out-alt fa-fw"></i> Logout
+                 <li class = "nav-item" style = "position: absolute; bottom: 20px; width: calc(100% - 30px);">
+                    <a class = "nav-link" href = "login.html">
+                        <i class = "fas fa-sign-out-alt fa-fw"></i> Logout
                     </a>
                 </li>
             </ul>
         </div>
 
-        <div class="main-content">
+        <div class = "main-content">
             <header class="top-bar">
                 <div>
                     <h4 class="mb-0">Incident Report Details</h4>
                 </div>
-                <div class="d-flex align-items-center">
-                    <div class="input-group me-3">
-                      <span class="input-group-text bg-light border-end-0"><i class="fas fa-search text-muted"></i></span>
-                      <input type="text" class="form-control bg-light border-start-0" placeholder="Search...">
+                <div class = "d-flex align-items-center">
+                    <div class = "input-group me-3">
+                      <span class = "input-group-text bg-light border-end-0"><i class = "fas fa-search text-muted"></i></span>
+                      <input type = "text" class = "form-control bg-light border-start-0" placeholder = "Search...">
                     </div>
-                    <div class="user-profile dropdown">
-                        <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://i.pravatar.cc/40?u=admin" alt="Admin" class="me-2">
+                    <div class = "user-profile dropdown">
+                        <a href = "#" class = "d-flex align-items-center text-dark text-decoration-none dropdown-toggle" id = "dropdownUser1" data-bs-toggle = "dropdown" aria-expanded = "false">
+                            <img src = "https://i.pravatar.cc/40?u=admin" alt = "Admin" class = "me-2">
                             <strong>Admin User</strong>
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-end text-small shadow" aria-labelledby="dropdownUser1">
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Settings</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="login.html">Sign out</a></li>
+                        <ul class = "dropdown-menu dropdown-menu-end text-small shadow" aria-labelledby = "dropdownUser1">
+                            <li><a class = "dropdown-item" href = "#">Profile</a></li>
+                            <li><a class = "dropdown-item" href = "#">Settings</a></li>
+                            <li><hr class = "dropdown-divider"></li>
+                            <li><a class = "dropdown-item" href = "login.html">Sign out</a></li>
                         </ul>
                     </div>
                 </div>
             </header>
+
+            <main>
+                <div class = "row g-4">
+                    <!-- Left Column: Report Details & Actions -->
+                    <div class = "col-lg-8">
+                        <div class = "data-card mb-4">
+                            <div class = "d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h5 class = "mb-1">Case #83450: Suspicious Link in Email</h5>
+                                    <p class = "text-muted">Reported on June 25, 2025 by m.reyes@feu.edu</p>
+                                </div>
+                                <div>
+                                    <span class = "badge bg-danger fs-6">High Priority</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <h6>User's Report Description:</h6>
+                            <p>"I received an email from 'University Admin' saying I won a scholarship and to click a link to claim it. The link looks weird and I haven't applied for any scholarships. The URL is http://bit.ly/campus-prize. I think it's a phishing attempt."</p>
+                        </div>
+                        <div class = "data-card">
+                            <h5 class = "mb-3">Admin Actions</h5>
+                             <textarea class = "form-control mb-3" rows = "3" placeholder = "Add investigation notes..."></textarea>
+                             <div class = "d-flex justify-content-between">
+                                 <div>
+                                     <button class = "btn btn-success">Mark as Resolved</button>
+                                     <button class = "btn btn-warning">Set to Pending</button>
+                                 </div>
+                                 <button class = "btn btn-danger">Escalate to IT Security</button>
+                             </div>
+                        </div>
+                    </div>
+                    <!-- Right Column: Investigation Log -->
+                    <div class = "col-lg-4">
+                        <div class = "data-card">
+                            <h5 class = "mb-3">Investigation Log</h5>
+                            <ul class = "list-unstyled">
+                                <li class = "alert-item mb-2">
+                                    <p class = "fw-bold mb-0">Case Created</p>
+                                    <small>June 25, 2025, 10:32 AM</small>
+                                </li>
 </body>
 </html>
