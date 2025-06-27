@@ -54,6 +54,95 @@
             </ul>
         </div>
 
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- Header for the main content area -->
+            <header class="top-bar">
+                <div>
+                    <h4 class="mb-0">System Activity Log</h4>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="input-group me-3">
+                      <span class="input-group-text bg-light border-end-0"><i class="fas fa-search text-muted"></i></span>
+                      <input type="text" class="form-control bg-light border-start-0" placeholder="Filter logs...">
+                    </div>
+                    <div class="user-profile dropdown">
+                        <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://i.pravatar.cc/40?u=admin" alt="Admin" class="me-2">
+                            <strong>Admin User</strong>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end text-small shadow" aria-labelledby="dropdownUser1">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="login.html">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Primary Content -->
+            <main>
+                <div class="data-card">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Timestamp</th>
+                                    <th>User / System</th>
+                                    <th>Action</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2025-06-26 09:15:22</td>
+                                    <td>admin@feu.edu</td>
+                                    <td>Logged In</td>
+                                    <td><span class="badge bg-success">Success</span></td>
+                                </tr>
+                                 <tr>
+                                    <td>2025-06-26 09:12:45</td>
+                                    <td>System</td>
+                                    <td>Firewall Update</td>
+                                    <td><span class="badge bg-success">Success</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2025-06-26 09:10:05</td>
+                                    <td>j.delacruz@feu.edu</td>
+                                    <td>Failed Login Attempt</td>
+                                    <td><span class="badge bg-warning text-dark">Warning</span></td>
+                                </tr>
+                                 <tr>
+                                    <td>2025-06-26 09:05:11</td>
+                                    <td>m.reyes@feu.edu</td>
+                                    <td>Reported Incident #83450</td>
+                                    <td><span class="badge bg-info">Info</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2025-06-26 08:55:30</td>
+                                    <td>System</td>
+                                    <td>Database Connection Error</td>
+                                    <td><span class="badge bg-danger">Error</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2025-06-26 08:45:19</td>
+                                    <td>admin@feu.edu</td>
+                                    <td>Viewed Dashboard</td>
+                                    <td><span class="badge bg-info">Info</span></td>
+                                </tr>
+                                 <tr>
+                                    <td>2025-06-26 08:30:00</td>
+                                    <td>System</td>
+                                    <td>Daily Backup Started</td>
+                                    <td><span class="badge bg-primary">System</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
         
     </div>
 
