@@ -1,50 +1,60 @@
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8f9fa;
-        }
-        .navbar-brand {
-            font-weight: 700;
-        }
-        .page-header {
-            background: linear-gradient(to right, #4a4de6, #6f42c1);
-            color: white;
-            padding: 80px 0;
-            text-align: center;
-        }
-        .page-header h1 {
-            font-weight: 700;
-            font-size: 3rem;
-        }
-        .content-section {
-            padding: 80px 0;
-        }
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-            font-weight: 700;
-        }
-        .team-member-card {
-            text-align: center;
-        }
-        .team-member-card img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
-            border: 5px solid #ffffff;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        .footer {
-            background-color: #343a40;
-            color: white;
-            padding: 40px 0;
-        }
-        .btn-primary {
-            background-color: #4a4de6;
-            border-color: #4a4de6;
-        }
-        .btn-primary:hover {
-             background-color: #3b3dbd;
-             border-color: #3b3dbd;
-        }
+body 
+{
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+}
+.navbar-brand 
+{
+    font-weight: 700;
+}
+.page-header 
+{
+    background: linear-gradient(to right, #4a4de6, #6f42c1);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+.page-header h1 
+{
+    font-weight: 700;
+    font-size: 3rem;
+}
+.content-section 
+{
+    padding: 80px 0;
+}
+.section-title 
+{
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+.team-member-card 
+{
+    text-align: center;
+}
+.team-member-card img 
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #ffffff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.footer 
+{
+    background-color: #343a40;
+    color: white;
+    padding: 40px 0;
+}
+.btn-primary {
+    background-color: #4a4de6;
+    border-color: #4a4de6;
+}
+.btn-primary:hover 
+{
+    background-color: #3b3dbd;
+    border-color: #3b3dbd;
+}
