@@ -24,7 +24,45 @@
             color: var(--dark-text-primary);
         }
 
+        .wrapper {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .left-sidebar, .right-sidebar {
+            background-color: var(--light-bg-secondary);
+            padding-top: 20px;
+            flex-shrink: 0;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            border: 1px solid var(--light-border-color);
+        }
         
+        .left-sidebar {
+            width: 260px;
+        }
+
+        .right-sidebar {
+            width: 280px;
+            padding: 20px;
+        }
+
+        .left-sidebar .sidebar-header {
+            padding: 0 20px 20px;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--dark-text-primary);
+        }
+
+        .left-sidebar .nav-link {
+            color: var(--dark-text-secondary);
+            font-weight: 500;
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin: 0 15px 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
     </style>
 
 </head>
