@@ -12,139 +12,130 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/designs (css)/landing-page styles/features.css">
 
-    <style>
-         /* Consistent styling */
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8f9fa;
-        }
-        .navbar-brand {
-            font-weight: 700;
-        }
-        .page-header {
-            background: linear-gradient(to right, #4a4de6, #6f42c1);
-            color: white;
-            padding: 80px 0;
-            text-align: center;
-        }
-        .page-header h1 {
-            font-weight: 700;
-            font-size: 3rem;
-        }
-
-    </style>
+    
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">CampusSecure</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="Landing_Page.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="features.html">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-primary ms-lg-2" href="signup.html">Sign Up</a>
-                    </li>
-                </ul>
+ <!-- Navigation Bar -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">CampusSecure</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Landing_Page.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="features.html">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary ms-lg-2" href="Sign-up.html">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Header -->
+<header class="page-header">
+    <div class="container">
+        <h1>Platform Features</h1>
+        <p class="lead">A comprehensive suite of tools for a safer campus.</p>
+    </div>
+</header>
+
+<!-- Features Detailed Section -->
+<section class="features-section">
+    <div class="container">
+
+        <!-- Feature 1: User Dashboard -->
+        <div class="feature-item row align-items-center">
+            <div class="col-md-6">
+                <div class="feature-icon-large"><i class="fas fa-tachometer-alt"></i></div>
+                <h3>User Dashboard</h3>
+                <p class="text-muted">A personalized hub for every user. The dashboard provides a quick overview of recent alerts, the current network status, and quick access to reporting tools. It's designed for clarity and immediate access to vital information.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="https://placehold.co/500x300/EAEAFE/4a4de6?text=User+Dashboard" class="img-fluid rounded shadow" alt="User Dashboard Mockup">
             </div>
         </div>
-    </nav>
 
-    <!-- Page Header-->
-        <header class="page-header">
-        <div class="container">
-            <h1>Platform Features</h1>
-            <p class="lead">A comprehensive suite of tools for a safer campus.</p>
+        <!-- Feature 2: Incident Reporting -->
+        <div class="feature-item row align-items-center flex-row-reverse">
+            <div class="col-md-6">
+                <div class="feature-icon-large"><i class="fas fa-exclamation-triangle"></i></div>
+                <h3>Simplified Incident Reporting</h3>
+                <p class="text-muted">Our streamlined form makes it easy for students and staff to report suspicious activity. Users can describe the incident, select a category, and submit their report in moments, ensuring that potential threats are communicated to administrators without delay.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="https://placehold.co/500x300/FFF0F0/FF6384?text=Report+Form" class="img-fluid rounded shadow" alt="Incident Reporting Form Mockup">
+            </div>
         </div>
-    </header>
 
-    <!-- Features Section -->
-
-    <section class="features-section">
-        <div class="container">
-
-            <!-- Feature 1: User Dashboard -->
-            <div class="feature-item row align-items-center">
-                <div class="col-md-6">
-                    <div class="feature-icon-large"><i class="fas fa-tachometer-alt"></i></div>
-                    <h3>User Dashboard</h3>
-                    <p class="text-muted">A personalized hub for every user. The dashboard provides a quick overview of recent alerts, the current network status, and quick access to reporting tools. It's designed for clarity and immediate access to vital information.</p>
-                </div>
-                <div class="col-md-6 text-center">
-                    <img src="https://placehold.co/500x300/EAEAFE/4a4de6?text=User+Dashboard" class="img-fluid rounded shadow" alt="User Dashboard Mockup">
-                </div>
+        <!-- Feature 3: Admin & Analytics -->
+        <div class="feature-item row align-items-center">
+            <div class="col-md-6">
+                <div class="feature-icon-large"><i class="fas fa-chart-pie"></i></div>
+                <h3>Admin & Analytics Dashboard</h3>
+                <p class="text-muted">Administrators have access to a powerful backend. They can view detailed reports, analyze trends in reported incidents, monitor network devices, and review system logs. This data-driven approach helps in identifying patterns and strengthening campus-wide security protocols.</p>
             </div>
-
-            <!-- Feature 2: Incident Reporting -->
-            <div class="feature-item row align-items-center flex-row-reverse">
-                <div class="col-md-6">
-                    <div class="feature-icon-large"><i class="fas fa-exclamation-triangle"></i></div>
-                    <h3>Simplified Incident Reporting</h3>
-                    <p class="text-muted">Our streamlined form makes it easy for students and staff to report suspicious activity. Users can describe the incident, select a category, and submit their report in moments, ensuring that potential threats are communicated to administrators without delay.</p>
-                </div>
-                <div class="col-md-6 text-center">
-                    <img src="https://placehold.co/500x300/FFF0F0/FF6384?text=Report+Form" class="img-fluid rounded shadow" alt="Incident Reporting Form Mockup">
-                </div>
+            <div class="col-md-6 text-center">
+                <img src="https://placehold.co/500x300/E8F5E9/28A745?text=Admin+Analytics" class="img-fluid rounded shadow" alt="Admin Analytics Dashboard Mockup">
             </div>
-
-            <!-- Feature 3: Admin & Analytics -->
-            <div class="feature-item row align-items-center">
-                <div class="col-md-6">
-                    <div class="feature-icon-large"><i class="fas fa-chart-pie"></i></div>
-                    <h3>Admin & Analytics Dashboard</h3>
-                    <p class="text-muted">Administrators have access to a powerful backend. They can view detailed reports, analyze trends in reported incidents, monitor network devices, and review system logs. This data-driven approach helps in identifying patterns and strengthening campus-wide security protocols.</p>
-                </div>
-                <div class="col-md-6 text-center">
-                    <img src="https://placehold.co/500x300/E8F5E9/28A745?text=Admin+Analytics" class="img-fluid rounded shadow" alt="Admin Analytics Dashboard Mockup">
-                </div>
-            </div>
-
-            <!-- Feature 4: Network Status & System Log -->
-            <div class="feature-item row align-items-center flex-row-reverse">
-                <div class="col-md-6">
-                    <div class="feature-icon-large"><i class="fas fa-network-wired"></i></div>
-                    <h3>Network Status & System Log</h3>
-                    <p class="text-muted">Transparency is key. Both users and admins can view the overall network health. Administrators have deeper access to detailed system logs, allowing them to trace activities and investigate incidents with a clear audit trail.</p>
-                </div>
-                <div class="col-md-6 text-center">
-                    <img src="https://placehold.co/500x300/FFF8E1/FFC107?text=System+Logs" class="img-fluid rounded shadow" alt="System Log Mockup">
-                </div>
-            </div>
-
-             <!-- Feature 5: Secure Login & Registration -->
-            <div class="feature-item row align-items-center">
-                <div class="col-md-6">
-                    <div class="feature-icon-large"><i class="fas fa-user-shield"></i></div>
-                    <h3>Secure Login & Registration</h3>
-                    <p class="text-muted">The gateway to our platform is protected with secure user authentication. We also offer options for signing in via trusted third-party providers, ensuring that access is both safe and convenient for all members of the university community.</p>
-                </div>
-                <div class="col-md-6 text-center">
-                    <img src="https://placehold.co/500x300/F3E5F5/8E44AD?text=Secure+Login" class="img-fluid rounded shadow" alt="Secure Login Mockup">
-                </div>
-            </div>
-
         </div>
-    </section>
 
-    <!-- Footer -->
+        <!-- Feature 4: Network Status & System Log -->
+        <div class="feature-item row align-items-center flex-row-reverse">
+            <div class="col-md-6">
+                <div class="feature-icon-large"><i class="fas fa-network-wired"></i></div>
+                <h3>Network Status & System Log</h3>
+                <p class="text-muted">Transparency is key. Both users and admins can view the overall network health. Administrators have deeper access to detailed system logs, allowing them to trace activities and investigate incidents with a clear audit trail.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="https://placehold.co/500x300/FFF8E1/FFC107?text=System+Logs" class="img-fluid rounded shadow" alt="System Log Mockup">
+            </div>
+        </div>
+
+         <!-- Feature 5: Secure Login & Registration -->
+        <div class="feature-item row align-items-center">
+            <div class="col-md-6">
+                <div class="feature-icon-large"><i class="fas fa-user-shield"></i></div>
+                <h3>Secure Login & Registration</h3>
+                <p class="text-muted">The gateway to our platform is protected with secure user authentication. We also offer options for signing in via trusted third-party providers, ensuring that access is both safe and convenient for all members of the university community.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="https://placehold.co/500x300/F3E5F5/8E44AD?text=Secure+Login" class="img-fluid rounded shadow" alt="Secure Login Mockup">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container text-center">
+        <p>&copy; 2025 CampusSecure. All Rights Reserved.</p>
+        <p>
+            <a href="#" class="text-white">Privacy Policy</a> |
+            <a href="#" class="text-white">Terms of Service</a>
+        </p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 
 </body>
-
-testing github 
