@@ -63,6 +63,42 @@
             margin: 0 15px 5px;
             transition: background-color 0.3s, color 0.3s;
         }
+
+        .left-sidebar .nav-link:hover {
+            background-color: #e9ecef;
+            color: var(--dark-text-primary);
+        }
+        
+        .left-sidebar .nav-link.active {
+            background-color: var(--accent-color);
+            color: #ffffff;
+        }
+
+        .left-sidebar .nav-link .fa-fw {
+            margin-right: 10px;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            padding: 30px;
+            overflow-y: auto;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .user-profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        
     </style>
 
 </head>
