@@ -5,10 +5,7 @@
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - CampusSecure</title>
     <!--Bootstrap CSS-->
-    <link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--Google Fonts - Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="href=https://fonts.gstatic.com" crossorigin>
@@ -16,192 +13,136 @@ crossorigin="anonymous">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
      crossorigin="anonymous" referrerpolicy="no-referrer" />
-<style>
-    /* Reusing styles from the main landing page for consistency */
-    body{
-        font-family: 'inter', sans-serif;
-        background-color: #f8f9fa;
-    }
-    .navbar-brand{
-        font-weight:700;
-    }
-    .page-header {
-        background: linear-gradient(to right, #4a4de6, #6f42c1);
-        color: white;
-        padding: 80px 0;
-        text-align: center;
-    }
-    .page-header h1 {
-        font-weight: 700;
-        font-size: 3rem;
-    }
-    .content-section {
-        padding: 80px 0;
-    }
-    .section-title {
-        text-align: center;
-        margin-bottom: 50px;
-        font-weight: 700;
-    }
-    .team-member-card {
-        text-align: center;
-    }
-    .team-member-card img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-bottom: 20px;
-        border: 5px solid #ffffff;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-    .footer {
-        background-color: #343a40;
-        color: white;
-        padding: 40px 0;
-    }
-    .btn-primary {
-        background-color: #4a4de6;
-        border-color: #4a4de6;
-    }
-    .btn-primary:hover {
-        background-color: #3b3dbd;
-        border-color: #3b3dbd;
+    <link rel="stylesheet" href="/designs (css)/landing-page styles/about.css">
 
-    }
-</style>
 </head>
 <body>
     
-    <!-- Navigation Bar-->
-     <nav class="navbar navbar-lg nav-light bg-white shadow-sm sticky-top">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
         <div class="container">
-            <a class="navbar-brand"
-    href="index.html">CampusSecure</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="nav-item">
-                <li class="nav-item">
-                    <a class="nav-link" href="Landing_Page.html">Home</a>
+            <a class="navbar-brand" href="index.html">CampusSecure</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Landing_Page.html">Home</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="About.html">About</a>
-                       <li class="nav-item"></li>
-                       <li class="nav-item">
-                        <a class="nav-link" href="Features.html">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Login.html">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-primary ms-lg-2" href="Sign-up.html">SignUp</a>
-                        </li>
                     </li>
-                </li>
-            </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Features.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ms-lg-2" href="Sign-up.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    
-        </div>
-     </nav>
-     </nav>
-     <!-- Page Header -->
-<header class="page-header">
-    <div class="container">
-        <h1>About CampusSecure</h1>
-        <p class="lead">Our mission to strengthen cyber awareness and reporting in Philippine universitites.</p>
-    </div>
-</header>
+    </nav>
 
-<!--Our Mission Section-->
-<section class="content-section bg-white">
-    <div class="containter">
-        <div class="row align-items-center">
-            <div class="cod-md-6">
-                <h2 class="mb-4">Our Mission</h2>
-                <p class="lead">CampusSecure is a front-end prototype designed to improve cyber awareness and expedite threat reporting within Philippine universitites.</p>
-                <p>With the rapid shift to digital academia, the risk of cyber attacks on colleges and universities has increased significantly. Our platform serves as a visual demonstration of how an accessible and clearly designed interface can empower students and faculty to identify threats and report suspicious activity, fostering a culture of digital safety.</p>
-                <p>We aim to simulate a centralized system that promotes vigilance and provides the tools necessary for a proactive approach to campus cybersecurity.</p>
-            </div>
-            <div class="col-md-6 text-center">
-                <img src="https://placehold.co/500x350/EAEAFE/4a4de6?text=Our+Mission" class="image-fluid rounded shadow" alt="Illustration of shield protecting a campus">
-            </div>
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>About CampusSecure</h1>
+            <p class="lead">Our mission to strengthen cyber awareness and reporting in Philippine universities.</p>
         </div>
-    </div>
-</section>
+    </header>
 
-<!-- The Problem Section-->
- <section class="content-section">
-    <div class="container">
-        <div class="row align-items-center flex-row-reverse">
-            <div class="col-md-6">
-                <h2 class="mb-4">The Challenge We Address</h2>
-                <p class="lead">Philippine universities are increasingly targeted by cyber threats, yet many lack accessible tools to respond effectively.</p>
-                <p>Research indicates that academic institutions often detect cyber attacks only after significant damage has occurred. This delay is worsened by a general lack of awareness and the absence of user-friendly reporting systems. Traditional defenses are no longer sufficient to protect the sensitive data and digital infrastructure of modern campuses.</p>\
-                <p>CampusSecure addresses this gap by providing a user-centered experience that encourages early detection and clear reporting, turning every member of the campus community into a part of the defense system.</p>
-            </div>
-            <div class="col-md-6 text-center">
-                <img src="https://placehold.co/500x350/FFEAEB/DC3545?text=The+Problem" class="img-fluid rounded shadow" alt="Illustration showing cyber threats">
-
-            </div>
-        </div>
-    </div>
- </section>
-<!-- Meet the Team Section-->
- <section class="content-section bg-white">
-    <div class="container">
-        <h2 class="section-title">Meet the Team</h2>
-        <div class="row g-4 justify-content-center">
-            <!-- Team Member 1-->
-             <div class="col-lg-3 col-md-6">
-                <div class="team-member-card">
-                    <img src="https://i.pravatar.cc/150?u=clark" alt="Team Member">
-                    <h5 class="mt-3">Bagtas,Clark Wayne D.</h5>
-                    <p class="text-muted">Lead Developer</p>
+    <!-- Our Mission Section -->
+    <section class="content-section bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="mb-4">Our Mission</h2>
+                    <p class="lead">CampusSecure is a front-end prototype designed to improve cyber awareness and expedite threat reporting within Philippine universities.</p>
+                    <p>With the rapid shift to digital academia, the risk of cyber attacks on colleges and universities has increased significantly. Our platform serves as a visual demonstration of how an accessible and clearly designed interface can empower students and faculty to identify threats and report suspicious activity, fostering a culture of digital safety.</p>
+                    <p>We aim to simulate a centralized system that promotes vigilance and provides the tools necessary for a proactive approach to campus cybersecurity.</p>
                 </div>
-             </div>
-             <!-- Team member 2-->
-              <div class="team-member-card">
-                <img src="https://i.pravatar.cc/150?u=jovs" alt="Team Member">
-                <h5 class="mt-3">Caburao, Jovs Francis</h5>
-                <p class="text-muted">UI/UX Designer</p>
-              </div>
-        </div>
-        <!-- Team member 3-->
-         <div class="col-lg-3 col-md-6">
-            <div class="team-member-card">
-                <img src="https://i.pravatar.cc/150?u=mark" alt="Team Member">
-                <h5 class="mt-3">Castro, Mark Benedict</h5>
-                <p class="text-muted">Frontend Specialist</p>
+                <div class="col-md-6 text-center">
+                    <img src="https://placehold.co/500x350/EAEAFE/4a4de6?text=Our+Mission" class="img-fluid rounded shadow" alt="Illustration of a shield protecting a campus">
+                </div>
             </div>
-         </div>
-         <!-- Team Member 4 -->
-          <div class="col-lg-3 col-md-6">
-             <div class="team-member-card">
-                <img src="https://i.pravatar.cc/150?u=andrew" alt="Team Member">
-                <h5 class="mt-3">De Jesus, Andrew</h5>
-                 <p class="text-muted">Project Documentation</p>
-             </div>
-          </div>
-    </div>
- </section>
+        </div>
+    </section>
 
- <!-- Footer -->
-  <footer class="footer">
-    <div classs="container text-center">
-        <p>&copy; 2025 CampusSecure. All Rights Reserved.</p>
-        <p>
-            <a href="#" class="text-white">Privacy Policy</a>
-            <a href="#" class="text-white">Terms of Service></a>
+    <!-- The Problem Section -->
+    <section class="content-section">
+        <div class="container">
+             <div class="row align-items-center flex-row-reverse">
+                <div class="col-md-6">
+                    <h2 class="mb-4">The Challenge We Address</h2>
+                    <p class="lead">Philippine universities are increasingly targeted by cyber threats, yet many lack accessible tools to respond effectively.</p>
+                    <p>Research indicates that academic institutions often detect cyber attacks only after significant damage has occurred. This delay is worsened by a general lack of awareness and the absence of user-friendly reporting systems. Traditional defenses are no longer sufficient to protect the sensitive data and digital infrastructure of modern campuses.</p>
+                    <p>CampusSecure addresses this gap by providing a user-centered experience that encourages early detection and clear reporting, turning every member of the campus community into a part of the defense system.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                     <img src="https://placehold.co/500x350/FFEAEB/DC3545?text=The+Problem" class="img-fluid rounded shadow" alt="Illustration showing cyber threats">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Meet the Team Section -->
+    <section class="content-section bg-white">
+        <div class="container">
+            <h2 class="section-title">Meet the Team</h2>
+            <div class="row g-4 justify-content-center">
+                <!-- Team Member 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-member-card">
+                        <img src="https://i.pravatar.cc/150?u=clark" alt="Team Member">
+                        <h5 class="mt-3">Bagtas, Clark Wayne D.</h5>
+                        <p class="text-muted">Lead Developer</p>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-member-card">
+                        <img src="https://i.pravatar.cc/150?u=jovs" alt="Team Member">
+                        <h5 class="mt-3">Caburao, Jovs Francis</h5>
+                        <p class="text-muted">UI/UX Designer</p>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-member-card">
+                        <img src="https://i.pravatar.cc/150?u=mark" alt="Team Member">
+                        <h5 class="mt-3">Castro, Mark Benedict</h5>
+                        <p class="text-muted">Frontend Specialist</p>
+                    </div>
+                </div>
+                <!-- Team Member 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-member-card">
+                        <img src="https://i.pravatar.cc/150?u=andrew" alt="Team Member">
+                        <h5 class="mt-3">De Jesus, Andrew</h5>
+                        <p class="text-muted">Project Documentation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        </p>
-    </div>
-  </footer>
 
-  <!-- Bootstrap-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-</script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2025 CampusSecure. All Rights Reserved.</p>
+            <p>
+                <a href="#" class="text-white">Privacy Policy</a> |
+                <a href="#" class="text-white">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
 
-
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
