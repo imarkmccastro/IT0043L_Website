@@ -1,0 +1,174 @@
+:root {
+    --light-bg-primary: #f0f2f5;
+    --light-bg-secondary: #ffffff;
+    --light-border-color: #dee2e6;
+    --dark-text-primary: #212529;
+    --dark-text-secondary: #6c757d;
+    --accent-color: #4a4de6;
+    --success-color: #198754;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--light-bg-primary);
+    color: var(--dark-text-primary);
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-sidebar {
+    background-color: var(--light-bg-secondary);
+    width: 260px;
+    flex-shrink: 0;
+    border-right: 1px solid var(--light-border-color);
+}
+
+.right-sidebar {
+    background-color: var(--light-bg-secondary);
+    width: 280px;
+    padding: 20px;
+    flex-shrink: 0;
+    border-left: 1px solid var(--light-border-color);
+}
+
+.sidebar-header {
+    padding: 1.25rem 1.25rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--dark-text-primary);
+}
+
+.sidebar-nav .nav-link {
+    color: var(--dark-text-secondary);
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin: 0 15px 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar-nav .nav-link:hover {
+    background-color: #e9ecef;
+    color: var(--dark-text-primary);
+}
+
+.sidebar-nav .nav-link.active {
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
+
+.sidebar-nav .nav-link .fa-fw {
+    margin-right: 10px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.data-card {
+    background-color: var(--light-bg-secondary);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid var(--light-border-color);
+    height: 100%;
+}
+
+.status-list .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0;
+    border-top: 1px solid var(--light-border-color);
+}
+.status-list .list-group-item:first-child {
+    border-top: none;
+}
+
+.right-sidebar h5 {
+    color: var(--dark-text-primary);
+    font-weight: 600;
+    border-bottom: 1px solid var(--light-border-color);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.alert-item {
+    font-size: 0.9rem;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border-left: 3px solid var(--accent-color);
+    background-color: #e9ecef;
+}
+
+.alert-item p {
+    margin-bottom: 0;
+    color: var(--dark-text-primary);
+}
+.alert-item small {
+    color: var(--dark-text-secondary);
+}
+
+.status-chart-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.status-chart-wrapper {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.status-chart-wrapper:hover {
+    transform: scale(1.05);
+}
+
+.status-chart-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.weather-widget {
+    display: flex;
+    align-items: center;
+}
+.weather-widget .weather-icon {
+    font-size: 4rem;
+    margin-right: 20px;
+    color: var(--warning-color);
+}
+.weather-widget .weather-details .temp {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* SweetAlert2 Customizations */
+.swal2-popup .swal2-html-container {
+    margin: 1em 1.6em 0.3em;
+}
