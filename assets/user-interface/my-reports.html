@@ -165,5 +165,81 @@
                 </li>
             </ul>
         </div>
+         <!-- Main Content Area -->
+        <div class="main-content">
+            <header class="top-bar">
+                <div class="d-flex align-items-center">
+                    <!-- Hamburger Menu for Mobile -->
+                    <button class="btn d-lg-none me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobile-sidebar" aria-controls="mobile-sidebar">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h4 class="mb-0">My Incident Reports</h4>
+                </div>
+                <div class="user-profile dropdown ms-2">
+                    <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://i.pravatar.cc/40?u=student" alt="User" class="me-2">
+                        <strong class="d-none d-sm-block">Jovs Francis</strong>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end text-small shadow" aria-labelledby="dropdownUser1">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="login.html">Sign out</a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <main>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="data-card">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Case ID</th>
+                                            <th>Subject</th>
+                                            <th>Date Reported</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="report-row" data-description="I received an email from 'University Admin' saying I won a scholarship and to click a link to claim it. The link looks weird and I haven't applied for any scholarships. The URL is http://bit.ly/campus-prize. I think it's a phishing attempt." data-admin-notes="Link confirmed as malicious. Blocked at the firewall. Campus-wide alert sent.">
+                                            <td>#83450</td>
+                                            <td>Suspicious Link in Email</td>
+                                            <td>June 25, 2025</td>
+                                            <td><span class="badge bg-danger">High Priority</span></td>
+                                            <td><button class="btn btn-sm btn-outline-primary view-btn">View</button></td>
+                                        </tr>
+                                        <tr class="report-row" data-description="The Wi-Fi in the main library is extremely slow and keeps disconnecting. It's impossible to study." data-admin-notes="Technician dispatched. Access Point #34 was faulty and has been replaced.">
+                                            <td>#83440</td>
+                                            <td>Slow Wi-Fi in Library</td>
+                                            <td>June 23, 2025</td>
+                                            <td><span class="badge bg-success">Resolved</span></td>
+                                            <td><button class="btn btn-sm btn-outline-primary view-btn">View</button></td>
+                                        </tr>
+                                        <tr class="report-row" data-description="Got an email from 'IT Support' asking me to verify my password by clicking a link. The sender's email address looks fake." data-admin-notes="Confirmed phishing attempt. The sender's address has been blacklisted.">
+                                            <td>#83435</td>
+                                            <td>Phishing Email from "IT Support"</td>
+                                            <td>June 22, 2025</td>
+                                            <td><span class="badge bg-success">Resolved</span></td>
+                                            <td><button class="btn btn-sm btn-outline-primary view-btn">View</button></td>
+                                        </tr>
+                                         <tr class="report-row" data-description="I got a notification that my account was accessed from a different country. I did not authorize this." data-admin-notes="No breach detected. User was likely using a VPN. Reached out to user to confirm.">
+                                            <td>#83421</td>
+                                            <td>Unfamiliar Login Alert</td>
+                                            <td>June 20, 2025</td>
+                                            <td><span class="badge bg-warning text-dark">Pending</span></td>
+                                            <td><button class="btn btn-sm btn-outline-primary view-btn">View</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
 </body>
 </html>
