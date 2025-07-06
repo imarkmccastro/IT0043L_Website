@@ -253,5 +253,84 @@
             </div>
         </div>
     </div>
+    <!-- Offcanvas Sidebar for Mobile -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-sidebar" aria-labelledby="mobile-sidebar-label">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mobile-sidebar-label">CampusSecure</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <ul class="nav flex-column sidebar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="user-dashboard.html">
+                        <i class="fas fa-tachometer-alt fa-fw"></i> Dashboard
+                    </a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="report-incident.html">
+                        <i class="fas fa-file-signature fa-fw"></i> Report Incident
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        <i class="fas fa-file-alt fa-fw"></i> My Reports
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-question-circle fa-fw"></i> FAQs
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav flex-column sidebar-nav mt-auto">
+                 <li class="nav-item">
+                    <a class="nav-link" href="login.html">
+                        <i class="fas fa-sign-out-alt fa-fw"></i> Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const viewButtons = document.querySelectorAll('.view-btn');
+            viewButtons.forEach(button => {
+                button.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const row = this.closest('.report-row');
+                    
+                    const caseId = row.cells[0].textContent;
+                    const subject = row.cells[1].textContent;
+                    const date = row.cells[2].textContent;
+                    const statusHtml = row.cells[3].innerHTML;
+                    const description = row.dataset.description;
+                    const adminNotes = row.dataset.adminNotes;
+
+                    Swal.fire({
+                        title: `<strong>Details for Case ${caseId}</strong>`,
+                        html: `
+                            <div class="text-start">
+                                <p><strong>Subject:</strong> ${subject}</p>
+                                <p><strong>Date Reported:</strong> ${date}</p>
+                                <p><strong>Status:</strong> ${statusHtml}</p>
+                                <hr>
+                                <p class="mb-1"><strong>Your Description:</strong></p>
+                                <p class="text-muted">${description}</p>
+                                <hr>
+                                <p class="mb-1"><strong>Admin Notes:</strong></p>
+                                <p class="text-muted">${adminNotes || 'No notes from admin yet.'}</p>
+                            </div>
+                        `,
+                        icon: 'info',
+                        confirmButtonText: 'Close',
+                        confirmButtonColor: '#4a4de6'
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
