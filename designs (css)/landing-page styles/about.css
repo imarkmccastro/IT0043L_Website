@@ -10,7 +10,7 @@ body
 .page-header 
 {
     background: linear-gradient(to right, #4a4de6, #6f42c1);
-    color: white;
+    color: rgb(116, 0, 184);
     padding: 80px 0;
     text-align: center;
 }
